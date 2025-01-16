@@ -1,4 +1,4 @@
-img{
+img#pilt1{
     border: 5px solid grey;
     border-radius: 160px;
     width: 20%;
@@ -8,7 +8,7 @@ h1{
     font-family: Georgia, Times, serif;
     letter-spacing: 2px;
     font-variant: small-caps;
-    color: darkgreen;
+    color: indigo;
     text-align: center;
 }
 body{
@@ -20,4 +20,10 @@ ul{
     margin-left: 5%;
 border: 1pt dotted grey;
     width: 30%;
+}
+img#pilt2{
+    border: 5px solid grey;
+    border-radius: 160px;
+    width: 50%;
+    padding: 1%;
 }
