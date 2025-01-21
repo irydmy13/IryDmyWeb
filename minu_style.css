@@ -1,41 +1,90 @@
-img#pilt1{
-    border: 5px solid grey;
-    border-radius: 160px;
-    width: 20%;
-    padding: 1%;
-}
-h1{
+body {
     font-family: Georgia, Times, serif;
-    letter-spacing: 2px;
+    background-color: lavender;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: indigo;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav .navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .navigation li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav .navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Заголовки */
+h1 {
     font-variant: small-caps;
     color: indigo;
     text-align: center;
 }
-body{
-    font-family: Georgia, Times, serif;
+
+h2 {
+    text-align: center;
+    color: darkslateblue;
+}
+
+/* Списки */
+ul, ol {
+    margin: 10px auto;
+    padding: 0;
+    width: 50%;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+
+.center-image img {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid grey;
+    border-radius: 20px;
+}
+
+
+footer {
+    background-color: indigo;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.aine-list { /* Рамка */
+    border: 2px dotted #7700ff;
+    padding: 10px;
+    width: 50%;
+    margin-left: 100px;
     background-color: lavender;
 }
-ul{
-    list-style-type: square;
-    margin-left: 5%;
-border: 1pt dotted grey;
-    width: 30%;
-}
-img#pilt2{
-    border: 5px solid grey;
-    border-radius: 160px;
-    width: 50%;
-    padding: 1%;
-}
-ul1{
-    list-style-type: square;
-    margin-left: 20%;
-    border: 1pt dotted grey;
-    width: 10%;
-}
-.center-image {
-    display: flex;
-    justify-content: center; /* Центрирует по горизонтали */
-    align-items: center; /* Центрирует по вертикали */
-    height: 300px; /* Установите высоту контейнера, если нужно */
+.aine-list {
+    padding-left: 40px; /* Отступ маркеров (точек) и текста от левого края рамки */
 }
