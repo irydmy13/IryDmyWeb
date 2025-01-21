@@ -14,6 +14,7 @@
             <li><a href="#skills">Oskused</a></li>
             <li><a href="#projects">Projektid</a></li>
             <li><a href="#mvp">MVP</a></li>
+            <li><a href="#git-commands">Gitiga töötamine</a></li>
         </ul>
     </nav>
 </header>
@@ -49,9 +50,11 @@
     <!-- MVP -->
     <section id="mvp">
         <h2>MVP (Minimum Viable Product)</h2>
-        <p style="margin-left: 100px;">MVP tähendab minimaalset elujõulist toodet, millel on ainult põhifunktsioonid. See luuakse hüpoteeside testimiseks ja nõudluse analüüsimiseks.</p>
+        <p style="margin-left: 100px;">MVP tähendab minimaalset elujõulist toodet, millel on ainult põhifunktsioonid. See luuakse hüpoteeside testimiseks ja nõudluse analüüsimiseks.
+            MVP põhimõte aitab teie koodi korrastada, eraldades rakenduse loogika kasutajaliidest. Oma projektides saan kasutada MVP-d projekti hõlpsaks testimiseks ja hooldamiseks, jagades selle mudeliks (M), vaateks (V) ja esitlejaks (P).</p>
+
         <div class="center-image">
-            <img src="12.png" alt="MVP Pilt" id="pilt2" width="500">
+            <img src="12.png" alt="MVP Pilt" id="pilt2" width="600">
         </div>
         <strong style="margin-left: 100px;">MVP põhimõtte rakendamine IT-projektides võimaldab:</strong>
         <ul class="aine-list">
@@ -61,6 +64,49 @@
             <li>Optimeerida arenduskulusid.</li>
             <li>Parandada toodet järk-järgult tagasiside põhjal.</li>
         </ul>
+    </section>
+
+    <section id="git-commands">
+        <h2>Töötamine kaughoidlaga</h2>
+        <p style="margin-left: 100px;">Kaugrepo loomiseks ja sellega töötamiseks käivitage järgmised käsud:</p>
+        <ol>
+            <li>Looge GitHubis uus hoidla.</li>
+            <li>Initsialiseerige kohalik hoidla:
+                <code>git init</code></li>
+            <li>Lisage kaughoidla:
+                <code>git remote add origin https://github.com/your-repo.git</code></li>
+            <li>Kinnitage muudatused:
+                <code>git add .</code> и <code>git commit -m "Initial commit"</code></li>
+            <li>Esitage muudatused:
+                <code>git push -u origin main</code></li>
+        </ol>
+
+        <h3>Kaughoidla loomine ja vajalike käskude kasutamine</h3>
+        <ol>
+            <li>Minge <a href="https://github.com/" target="_blank">GitHubi</a> ja logige sisse.</li>
+            <li>Vajutage nuppu <strong>New</strong> (paremal esilehel või jaotises "Repositories").</li>
+            <li>Sisestage hoidla nimi (näiteks <code>my-project</code>).</li>
+            <li>Valige nähtavus (Public või Private).</li>
+            <li>Vajutage <strong>Create repository</strong>.</li>
+            <li>Kasuta järgmisi käske, et siduda kohalik projekt kaughoidlaga:</li>
+            <ul>
+                <li><code>git init</code> – Algatab Git-hoidla kohalikus kaustas.</li>
+                <li><code>git add .</code> – Lisab kõik failid indekseerimiseks.</li>
+                <li><code>git commit -m "Esimene commit"</code> – Loob commiti koos sõnumiga.</li>
+                <li><code>git branch -M main</code> – Nimetab põhiharuks "main".</li>
+                <li><code>git remote add origin https://github.com/kasutajanimi/my-project.git</code> – Lisab kaughoidla URL-i.</li>
+                <li><code>git push -u origin main</code> – Saadab kohalikud muudatused kaughoidlasse.</li>
+            </ul>
+            <p>Edasi looge uus haru:</p>
+            <ol>
+                <li><code>git checkout -b new-branch</code> – Looge ja vahetage haru.</li>
+                <li>Lisage muudatused ja tehke commiti:
+                    <code>git add .</code> ja <code>git commit -m "Uued muudatused haru new-branch jaoks"</code></li>
+                <li>Saada muudatused kaughoidlasse:
+                    <code>git push -u origin new-branch</code></li>
+            </ol>
+            <p>Kui soovite, et GitHubi leht oleks saadaval, määrake <strong>GitHub Pages</strong> seadetes uus haru (new-branch) allikaks.</p>
+        </ol>
     </section>
 </main>
 

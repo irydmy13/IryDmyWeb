@@ -94,3 +94,12 @@ footer {
     margin-top: 20px; /* Отступ сверху */
     margin-bottom: 20px; /* Отступ снизу */
 }
+footer {
+    background-color: indigo;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
