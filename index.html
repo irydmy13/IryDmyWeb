@@ -66,53 +66,60 @@
         </ul>
     </section>
 
+    <!-- Git Commands -->
     <section id="git-commands">
-        <h2>Töötamine kaughoidlaga</h2>
+        <h2>Remote repository</h2>
         <div class="center-image">
             <img src="13.png" alt="Minu pilt" id="pilt1" width="500">
         </div>
-        <p style="margin-left: 100px;">Kaugrepo loomiseks ja sellega töötamiseks käivitage järgmised käsud:</p>
-        <ol>
-            <li>Looge GitHubis uus hoidla.</li>
-            <li>Initsialiseerige kohalik hoidla:
-                <code>git init</code></li>
-            <li>Lisage kaughoidla:
-                <code>git remote add origin https://github.com/your-repo.git</code></li>
-            <li>Kinnitage muudatused:
-                <code>git add .</code> и <code>git commit -m "Initial commit"</code></li>
-            <li>Esitage muudatused:
-                <code>git push -u origin main</code></li>
-        </ol>
 
-        <h3>Kaughoidla loomine ja vajalike käskude kasutamine</h3>
-        <ol>
-            <li>Minge <a href="https://github.com/" target="_blank">GitHubi</a> ja logige sisse.</li>
+        <h3 style="margin-left: 100px;">Kaughoidla loomine ja vajalike käskude kasutamine:</h3>
+        <ol class="aine-list">
+            <li>Minge <a href="https://github.com/" target="_blank">GitHub</a> ja logige sisse.</li>
             <li>Vajutage nuppu <strong>New</strong> (paremal esilehel või jaotises "Repositories").</li>
             <li>Sisestage hoidla nimi (näiteks <code>my-project</code>).</li>
             <li>Valige nähtavus (Public või Private).</li>
             <li>Vajutage <strong>Create repository</strong>.</li>
-            <li>Kasuta järgmisi käske, et siduda kohalik projekt kaughoidlaga:</li>
-            <ul>
-                <li><code>git init</code> – Algatab Git-hoidla kohalikus kaustas.</li>
-                <li><code>git add .</code> – Lisab kõik failid indekseerimiseks.</li>
-                <li><code>git commit -m "Esimene commit"</code> – Loob commiti koos sõnumiga.</li>
-                <li><code>git branch -M main</code> – Nimetab põhiharuks "main".</li>
-                <li><code>git remote add origin https://github.com/kasutajanimi/my-project.git</code> – Lisab kaughoidla URL-i.</li>
-                <li><code>git push -u origin main</code> – Saadab kohalikud muudatused kaughoidlasse.</li>
-            </ul>
-            <p>Edasi looge uus haru:</p>
-            <ol>
-                <li><code>git checkout -b new-branch</code> – Looge ja vahetage haru.</li>
-                <li>Lisage muudatused ja tehke commiti:
-                    <code>git add .</code> ja <code>git commit -m "Uued muudatused haru new-branch jaoks"</code></li>
-                <li>Saada muudatused kaughoidlasse:
-                    <code>git push -u origin new-branch</code></li>
-            </ol>
-            <p>Kui soovite, et GitHubi leht oleks saadaval, määrake <strong>GitHub Pages</strong> seadetes uus haru (new-branch) allikaks.</p>
         </ol>
-    </section>
-</main>
+            <h3 style="margin-left: 100px;">Kasuta järgmisi käske, et siduda kohalik projekt kaughoidlaga:</h3>
+        <body>
+        <div class="instruction">
+            <p>1. Algatab Git-hoidla kohalikus kaustas:</p>
+            <div class="code-block">git init</div>
 
+            <p>2. Lisab kõik failid indekseerimiseks:</p>
+            <div class="code-block">git add .</div>
+
+            <p>3. Loob commiti koos sõnumiga:</p>
+            <div class="code-block">git commit -m "Esimene commit"</div>
+
+            <p>4. Nimetab põhiharuks "main":</p>
+            <div class="code-block">git branch -M main</div>
+
+            <p>5. Lisab kaughoidla URL-i.:</p>
+            <div class="code-block">git remote add origin https://github.com/kasutajanimi/my-project.git</div>
+
+            <p>6. Saadab kohalikud muudatused kaughoidlasse:</p>
+            <div class="code-block">git push -u origin main</div>
+        </div>
+        </body>
+</html>
+
+            <h3 style="margin-left: 100px;">Edasi looge uus haru:</h3>
+<body>
+<div class="instruction">
+    <p>1. Looge ja vahetage haru:</p>
+    <div class="code-block">git checkout -b new-branch</div>
+
+    <p>2. Lisage muudatused ja tehke commiti:</p>
+    <div class="code-block">git add .<p></p>git commit -m "Uued muudatused haru new-branch jaoks"</div>
+
+    <p>3. Saada muudatused kaughoidlasse:</p>
+    <div class="code-block">git push -u origin new-branch</div>
+            <p>Kui soovite, et GitHubi leht oleks saadaval, määrake <strong>GitHub Pages</strong> seadetes uus haru (new-branch) allikaks.</p>
+    </section>
+</div>
+</main>
 <footer>
     <p>&copy; 2025 Noorem Tarkvaraarendaja. Kõik õigused kaitstud.</p>
 </footer>
