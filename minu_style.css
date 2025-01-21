@@ -64,7 +64,7 @@ ol {
 .center-image img {
     display: block;
     margin: 0 auto;
-    border: 5px solid grey;
+    border: 5px solid darkslateblue;
     border-radius: 20px;
 }
 
@@ -84,7 +84,13 @@ footer {
     width: 50%;
     margin-left: 100px;
     background-color: lavender;
+    padding-left: 40px; /* Отступ маркеров и текста от левого края рамки */
 }
-.aine-list {
-    padding-left: 40px; /* Отступ маркеров (точек) и текста от левого края рамки */
+#pilt1 {
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+#pilt2 {
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
 }
