@@ -27,3 +27,15 @@ img#pilt2{
     width: 50%;
     padding: 1%;
 }
+ul1{
+    list-style-type: square;
+    margin-left: 20%;
+    border: 1pt dotted grey;
+    width: 10%;
+}
+.center-image {
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+    height: 300px; /* Установите высоту контейнера, если нужно */
+}
